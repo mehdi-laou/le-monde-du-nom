@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template pour présentation avec Reveal.js</title>
+    <!-- CSS obligatoire de Reveal.js -->
+    <link rel="stylesheet" href="./assets/vendor/revealjs/dist/reveal.css" />
+    <!-- CSS selon le thème de Reveal.js choisi, voir le dossier correspondant pour les options -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/revealjs/dist/theme/serif.css"
+    />
+    <!-- CSS personnel avec déclarations de style en ajoute ou en substitution -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Début du contenu de la présentation -->
+    <div class="reveal">
+      <div class="slides">
+        <!-- Chaque slide se crée avec une balise section-->
+
+        <!-- Slide avec titre -->
+        <section>
+          <h2>Titre de la présentation</h2>
+          <p>
+            Prénom Nom<br />
+            <small>Institution, fonction, ...</small>
+          </p>
+        </section>
+
+        <!-- Slide avec introduction -->
+        <section>
+          <h3>Introduction</h3>
+        </section>
+      </div>
+    </div>
+    <!-- JS obligatoire de Reveal.js -->
+    <script src="./assets/vendor/revealjs/dist/reveal.js"></script>
+    <!-- Plugin JS optionnels de Reveal.js -->
+    <script src="./assets/vendor/revealjs/plugin/highlight/highlight.js"></script>
+    <script src="./assets/vendor/revealjs/plugin/markdown/markdown.js"></script>
+    <script src="./assets/vendor/revealjs/plugin/math/math.js"></script>
+    <script src="./assets/vendor/revealjs/plugin/notes/notes.js"></script>
+    <script src="./assets/vendor/revealjs/plugin/search/search.js"></script>
+    <script src="./assets/vendor/revealjs/plugin/zoom/zoom.js"></script>
+    <!-- Initialization de Reveal.js selon la configuration souhaitée -->
+    <script>
+      // https://revealjs.com/initialization/
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: false,
+        hash: true,
+        slideNumber: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealZoom,
+          RevealNotes,
+          RevealSearch,
+          RevealMarkdown,
+          RevealHighlight,
+          RevealMath,
+        ],
+      });
+    </script>
+    <!-- JS personnel pour ajouter des éléments interactifs (optionnel)-->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
