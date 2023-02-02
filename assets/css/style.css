@@ -1,0 +1,62 @@
+#drag-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .drag-item {
+    margin: 5px;
+  }
+  
+  .mots-hasard {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: move;
+    margin: 5px;
+  }
+  .drop-zone {
+    border: 1px solid black;
+  }
+  .rep-box{
+    display: flex;
+    margin: 10px;
+
+  }
+  .box{
+    border: 1px solid black;
+  }
+  
+  #drop-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .image{
+    max-height: 400px;
+  }
+
+  #drop-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .drop-item2 {
+    background-color: white;
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+ .mots-hasard{
+    font-size: small ;
+ }
+
+ .consigne-ex3{
+    font-size:x-large;
+ }
+
+ 

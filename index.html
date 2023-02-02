@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template pour présentation avec Reveal.js</title>
+    <title>Le monde du Nom</title>
     <!-- CSS obligatoire de Reveal.js -->
     <link rel="stylesheet" href="./assets/vendor/revealjs/dist/reveal.css" />
     <!-- CSS selon le thème de Reveal.js choisi, voir le dossier correspondant pour les options -->
     <link
       rel="stylesheet"
-      href="./assets/vendor/revealjs/dist/theme/serif.css"
+      href="./assets/vendor/revealjs/dist/theme/solarized.css"
     />
     <!-- CSS personnel avec déclarations de style en ajoute ou en substitution -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/vendor/jquery/jquery-ui.min.css">
   </head>
   <body>
     <!-- Début du contenu de la présentation -->
@@ -23,17 +24,210 @@
 
         <!-- Slide avec titre -->
         <section>
-          <h2>Titre de la présentation</h2>
+          <h1>Le monde du Nom</h1>
           <p>
-            Prénom Nom<br />
-            <small>Institution, fonction, ...</small>
+            Mehdi LAOUINI<br />
+            <small>TECFA, Université de Genève</small>
           </p>
+        </section> 
+
+        <!-- Slide Groupe Nominal -->
+        <section>
+          <h2> Le groupe nominal</h2>
+          <h3 class="fragment">Le nom constitue l'élément principal du groupe nominal</h3>
+          <p class="fragment">Dans une phrase, il est toujours accompagné </p>
+        
+            <ul>
+              <li class="fragment">d'un déterminant (D)</li>
+              <li class="fragment">d'un déterminant + un adjectif ( D + Adj)</li>
+            </ul>
+
+        </section>
+        <!-- Slide Groupe Nominal D + Nom -->
+        <section>
+          <h2> Le groupe nominal</h2>
+          <h3 class="fragment">Déterminant + Nom</h3>
+          <p class="fragment">D + NOM</p>
+          <p class="fragment"><img class="fragment" src="./assets/image/unChien/chienDet.svg" alt="chien"></p>
+        </section>
+        
+        
+        <!-- Slide Groupe Nominal Exercice D + Nom -->
+
+        <section>
+          <h2> Le groupe nominal</h2>
+          <h3>Déterminant + Nom</h3>
+          <p class="consigne">Exercice : Placez les déterminants devant les bon noms</p>
+          <div id="drag-container" class="container">
+            <div class="drag-item det-masc"> <p>un </p></div>
+            <div class="drag-item det-fem"> <p> une </p></div>
+            <div class="drag-item det-fem"> <p> la </p></div>
+          </div>
+          <div class="rep-box">
+            <div class="drop-zone "><p>_______________</p></div>
+            <div class="txt">lion</div>
+          </div>
+          <div class="rep-box">
+            <div class="drop-zone "><p>_______________</p></div>
+            <div class="txt">souris</div>
+          </div>
+          <div class="rep-box">
+            <div class="drop-zone "><p>_______________</p></div>
+            <div class="txt">voiture</div>
+          </div>
         </section>
 
-        <!-- Slide avec introduction -->
+          <!-- Slide Groupe Nominal D + Nom + Adj -->
         <section>
-          <h3>Introduction</h3>
+          <h2> Le groupe nominal</h2>
+          <h3 class="fragment">Déterminant + Nom + Adjectif</h3>
+          <p class="fragment">D + NOM + Adj</p>
+          <div class="image">
+            <p class="fragment" ><img src="./assets/image/unChien/chienAdj.svg" alt="chien + adj"></p>
+          </div>
+          <p class="fragment">....<strong>OU</strong> </p>
         </section>
+
+         <!-- Slide Groupe Nominal D + Adj + Nom -->
+         <section>
+          <h2> Le groupe nominal</h2>
+          <h3 class="fragment">Déterminant + Adjectif + Nom</h3>
+          <p class="fragment">D + Adj + NOM</p>
+          <div class="image">
+            <p class="fragment" ><img src="./assets/image/unChien/adjChien.svg" alt="adj + chien"></p>
+          </div>
+        </section>
+
+         <!-- Slide Groupe Nominal Exercice D + Nom + Adj-->
+
+        <section>
+          <h2> Le groupe nominal</h2>
+          <h4>Déterminant, nom ou adjectif ?</h4>
+          <p class="consigne">Appuie sur le <strong>bouton</strong>  pour avoir un mot. Puis mets le dans la bonne catégorie.</p>
+          <button id="btn-noms">Mots au hasard</button>
+          <div id="showNom" class="container">
+            <span id="targetNom" class="mots-hasard"></span>
+          </div>
+          <div id="drop-container">
+            <div class="drop-item2" id="drop1"><small>Déterminants</small> </div>
+            <div class="drop-item2" id="drop2"><small>Noms</small></div>
+            <div class="drop-item2" id="drop3"><small>Adjectifs</small></div>
+          </div>
+          <button id="refresh-button">Recommencer</button>
+        </section>
+
+        <section>
+          <h2> Accord du groupe nominal</h2>
+          <p class="fragment">Le groupe nominal s'accorde en <span class="fragment"style="color: rgb(255,0,0)">genre</span>.</p>
+          <p class="fragment"><i>"Le petit chien"</i> au féminin devient :</p>
+          <ul>
+            <li class="fragment">L<span style="color: red;">a</span> petit<span style="color: red;">e</span> chien<span style="color: red;">ne</span></li>
+          </ul>
+          <p class="fragment"><i>"L<span style="color: blue;">a</span> grand<span style="color: blue;">e</span> lion<span style="color: blue;">ne</span>"</i> au masculin devient :</p>
+          <p class="fragment"></p>
+          <ul>
+            <li class="fragment">Le grand lion</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2> Accord du groupe nominal</h2>
+          <p>Le groupe nominal s'accorde en <spam class="fragment" style="color: rgb(255,0,0)"> nombre</spam>.</p>
+          <p class="fragment"><i>"Le petit chien"</i> au pluriel devient :</p>
+          <ul>
+            <li class="fragment">Le<span style="color: red;">s</span> petit<span style="color: red;">s</span> chien<span style="color: red;">s</span></li>
+          </ul>
+          <p class="fragment"><i>"La grande lionne"</i> au pluriel devient :</p>
+          <ul>
+            <li class="fragment">Le<span style="color: red;">s</span> grande<span style="color: red;">s</span> lionne<span style="color: red;">s</span></li>
+          </ul>
+        </section>
+        <section>
+          <h2> Accord du groupe nominal</h2>
+          <p>Le groupe nominal s'accorde en <span style="color: rgb(255,0,0)">genre</span> <span>et en</span><spam style="color: rgb(255,0,0)"> nombre</spam>.</p>
+          <p class="fragment"><i>""</i> au masculin et pluriel devient :</p>
+          <ul>
+            <li class="fragment">L<span style="color: red;">es</span> pauvre<span style="color: red;">s</span><span style="color: red;"> hommes</span></li>
+          </ul>
+          <p class="fragment"><i>"La grande lionne"</i> au masculin et pluriel devient :</p>
+          <ul>
+            <li class="fragment">L<span style="color: red;">es</span> grand<span style="color: red;">s</span> lion<span style="color: red;">s</span></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Exercice: Genre et nombre du groupe nominal</h2>
+          <p class="consigne-ex3">
+            Voici plusieurs phrases. Indique s'il s'agit d'une phrase au masculin (<strong>masc.</strong>), au féminin (<strong>fem.</strong>), au masculin pluriel (<strong>masc. pl.</strong>) ou au féminin pluriel (<strong>fem. pl.</strong>). <br></p>
+          <form>
+            <label for="naturePhrase">1) <i>Le gentil monsieur</i></label>
+              <select class="rep-btn" name="naturePhrase" id="naturePhrase">
+                <option disabled selected value="0"> --choisis une réponse</option>
+                <option value="1">fem.</option>
+                <option value="2">masc.</option>
+                <option value="3">fem. pl.</option>
+                <option value="4">masc. pl.</option>
+              </select> <br>
+
+            <label for="naturePhrase">2) <i>Les voitures rouges</i></label>
+              <select class="rep-btn" name="naturePhrase" id="naturePhrase">
+                <option disabled selected value="0"> --choisis une réponse</option>
+                <option value="1">fem.</option>
+                <option value="2">masc.</option>
+                <option value="3">fem. pl.</option>
+                <option value="4">masc. pl.</option>
+              </select> <br>
+
+            <label for="naturePhrase">3) <i>La petite porte</i></label>
+              <select class="rep-btn" name="naturePhrase" id="naturePhrase">
+                <option disabled selected value="0"> --choisis une réponse</option>
+                <option value="1">fem.</option>
+                <option value="2">masc.</option>
+                <option value="3">fem. pl.</option>
+                <option value="4">masc. pl.</option>
+              </select> <br>
+
+            <label for="naturePhrase">4) <i>Un vélo vert</i></label>
+              <select class="rep-btn" name="naturePhrase" id="naturePhrase">
+                <option disabled selected value="0"> --choisis une réponse</option>
+                <option value="1">fem.</option>
+                <option value="2">masc.</option>
+                <option value="3">fem. pl.</option>
+                <option value="4">masc. pl.</option>
+              </select> <br>
+            
+            <label for="naturePhrase">5) <i>Des habits magnifiques</i></label>
+              <select class="rep-btn" name="naturePhrase" id="naturePhrase">
+                <option disabled selected value="0"> --choisis une réponse</option>
+                <option value="1">fem.</option>
+                <option value="2">masc.</option>
+                <option value="3">fem. pl.</option>
+                <option value="4">masc. pl.</option>
+              </select> <br>
+          </form>
+          <div>
+            <button id="btn-check" onclick="checkCorrectAnswers()" >Corriger</button>
+            <button id="btn-recommencer" style="display: none;" onclick="checkCorrectAnswers()">Recommencer</button>
+          </div>          
+        </section>
+        <section>
+          <h1>Merci de votre attention</h1>
+          <p>
+            Mehdi LAOUINI<br />
+            <small>TECFA, Université de Genève</small>
+          </p>
+          
+        </section> 
+        <section>
+          <p>
+            Ressources utilisées<br />
+            <small><a href="https://jqueryui.com/">jQuery UI</a></small> <br>
+            <small><a href="https://revealjs.com/">Reveal Js</a></small> <br>
+            <small><a href="https://canva.com/">Canva pour les images SVG</a></small>
+          </p>
+          <p><small><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Cette œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale 4.0 International</a>.</small></p>
+        </section> 
+
       </div>
     </div>
     <!-- JS obligatoire de Reveal.js -->
@@ -66,6 +260,11 @@
         ],
       });
     </script>
+    
+    <!-- JS Jquery-->
+    <script src="./assets/vendor/jquery/external/jquery/jquery.js"></script>
+    <script src="./assets/vendor/jquery/jquery-ui.min.js"></script>
+
     <!-- JS personnel pour ajouter des éléments interactifs (optionnel)-->
     <script src="./assets/js/app.js"></script>
   </body>
